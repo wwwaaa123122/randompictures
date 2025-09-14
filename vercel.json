@@ -1,6 +1,8 @@
 {
   "routes": [
     { "src": "/", "dest": "/api/pic.js" },
+    { "src": "^/public/(.*)$", "dest": "/$1" },
+    { "src": "^/origin/(.*)$", "dest": "/$1" },
     { "src": "/pic", "dest": "/api/pic.js" }
   ]
 }
